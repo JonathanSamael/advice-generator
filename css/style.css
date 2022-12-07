@@ -1,0 +1,108 @@
+:root {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.title h1, p{
+    display: flex;
+    justify-content: center;
+}
+
+.title > h1 {
+    position: absolute;
+    top: 180px;
+}
+
+.title > p {
+    position: absolute;
+    top: 210px;
+    font-size: 12px;
+}
+
+.container {
+    background-color: var(--advice-card-color);
+    width: 350px;
+    height: 200px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px var(--advice-dice-color) ;
+}
+
+.advice {
+    padding: 30px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.title-advice {
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--advice-dice-color);
+    color: var(--advice-card-color);
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: var(--text-color);
+    transform: rotate(360deg);
+    box-shadow: 3px 3px 6px var(--background-color);
+    transition: ease 0.9s;
+}
+
+@media(max-width: 430px) {
+    .title {
+        font-size: 13px;
+        position: relative;
+        top: -250px;
+    }
+
+    .title > p {
+        font-size: 9px;
+    }
+
+    .container {
+        max-width: 300px;
+        height: 230px;
+    }
+
+    .container img.line {
+        margin-top: 10px;
+    }
+
+    .button {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
